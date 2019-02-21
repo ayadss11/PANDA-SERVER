@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = ""; // ضع البريفكس الخاص بك هنا
-const token = ""; // هنا تضع التوكن الخاص بك
+const prefix = "!"; // ضع البريفكس الخاص بك هنا
 
 
 
@@ -142,4 +141,4 @@ client.on('message' , message => {//bcrole
 });
 
 
-client.login(token);
+client.login(process.env.TOKEN); 
