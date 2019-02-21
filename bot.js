@@ -154,7 +154,7 @@ moment.locale('ar-ly');
 var mrx = member.user;
 let mrxembed = new Discord.RichEmbed()
 .setTitle(mrx.username,`#${mrx.discriminator}`)
-.addField('» Joined Discord ago',`${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} **\n** \`${moment(member.user.createdAt).fromNow()}\``,true)            
+.addField('» Joined Discord ago',`${moment}(member.user.createdAt).format('D/M/YYYY h:mm a')} **\n** \`${moment(member.user.createdAt).fromNow()}\``,true)            
 .addField('» Your Number',`${member.guild.memberCount}`,true)
 .setThumbnail(mrx.avatarURL)
 .setFooter("Zombie Games.")
