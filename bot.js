@@ -29,7 +29,6 @@ client.on('ready', () => {
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  client.user.setGame(`${prefix}help1`)
 });
 
 
@@ -308,6 +307,69 @@ client.on("reachLimit", (limit)=> {
     .catch(log.send)
   });
 });
+
+
+
+
+
+
+
+const gamestats = [`!help1`,`PANDA SERVER bot`,`by 1_Ali_`,`PANDA SERVER
+`]
+var index = 0
+var timer = 10 // الوقت بالثواني لتغير الستريمنق
+client.on("ready", ()=> {
+        setInterval(function(){
+        client.user.setGame(`${gamestats[index]}`,'https://www.twitch.tv/ACMBOT') 
+        index++
+            if( index >= gamestats.length) index = 0 ;
+        }, timer*1000);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
