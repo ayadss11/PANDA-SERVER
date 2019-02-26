@@ -40,6 +40,7 @@ client.on('message', message => {
     
     
     if (command === `${prefix}help1`) {
+      message.channel.send(`**تم الارسال في الخاص**`);
 			let embed = new Discord.RichEmbed()
                 .setColor('RANDOM')
                 .addField('     **=-=-:: [ Narox ] ::-=-=** ' ,'╔[❖═════════════════════❖]╗')
